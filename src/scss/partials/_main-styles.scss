@@ -10,7 +10,7 @@
   margin: 0 0 70px;
 }
 .header{
-  max-width: 1320px;
+  min-width: 1320px;
   padding: 50px 5px 0;
   margin: 0 auto;
   display: grid;
@@ -101,4 +101,58 @@
       background: #E6E6F0;
     }
   }
+  @media screen and (min-width: 1920px){
+    min-width: 1600px;
+  }
 }
+.home_page{
+  background: url("../img/Symbol.png") 50% 50% no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 60px;
+  position: relative;
+}
+.home_title{
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  font-size: 38px;
+  line-height: 46px;
+  color: white;
+  font-weight: 700;
+  margin:0 0 120px;
+}
+.scroll_btn{
+  background: none;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 50%);
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 30px;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    width: 9px;
+    height: 9px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+  }
+  &:hover{
+    border-color: #F0145A;
+    &:after{
+      border-color: #F0145A;
+    }
+  }
+}
+
+
