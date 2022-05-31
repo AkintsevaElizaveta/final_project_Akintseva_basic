@@ -1,17 +1,19 @@
 * {
     box-sizing: border-box;
 }
-
+body{
+    margin: 0;
+    font: 16px/26px 'Montserrat', sans-serif;
+}
 img {
     border-style: none;
 }
-
-a {
+a{
     text-decoration: none;
-    color: white;
     cursor: pointer;
     &:hover {
         text-decoration: underline;
+        color: #f0145a;
     }
     &:active {
         background-color: transparent;
