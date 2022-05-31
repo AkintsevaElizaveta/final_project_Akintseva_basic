@@ -6,11 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hlegal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/jquery.main.js"></script>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-
+    <div class="wrapper">
+        <div class="dark_bg_part">
+            <header class="header">
+                <div class="logo_img"><img src="img/Logo.svg" alt=""></div>
+                <div class="header_contacts">
+                    <div class="lng_box">
+                        <a onclick="changeLanguage(0)" class="lng">УК</a>
+                        <a onclick="changeLanguage(1)" class="lng">РУ</a>
+                        <a onclick="changeLanguage(2)" class="lng selected_lng">EN</a></div>
+                    <address class="address">Kyiv, Mechnikova str, 14/1</address>
+                    <a href="tel:+0800211927" class="tel">0800 211 927</a>
+                    <a href="">
+                        <svg  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_40399_2714)"><path class="facebook" d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="white"/></g><defs>
+                            <clipPath id="clip0_40399_2714"><rect width="24" height="24" fill="white" transform="translate(0 0.5)"/></clipPath></defs>
+                        </svg></a>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li class="header_item"><a href="#about_anchor" class="header_link">about us</a></li>
+                        <li class="header_item"><a href="#services_anchor" class="header_link">services</a></li>
+                        <li class="header_item"><a href="#team_anchor" class="header_link">team</a></li>
+                        <li class="header_item"><a href="#publication_anchor" class="header_link">publications</a></li>
+                        <li class="header_item"><a href="" class="header_link">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
 </body>
 </html>
