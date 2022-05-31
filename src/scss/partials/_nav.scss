@@ -1,10 +1,29 @@
-.nav{
-    .nav-item{
-
+.header_menu{
+    justify-self: end;
+    grid-area: 2/2/3/3;
+    .header_list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
     }
-    .nav-link{
+    .header_item{
+        padding: 15px;
+        &:first-child{
+            padding-left: 0;
+    }
+       &:last-child{
+           padding-right: 0;
+    }
+    }
+    .header_link{
+        color: white;
+        line-height: 20px;
+        font-weight: 700;
+        text-decoration-line: none;
         &:hover{
-
+            border-bottom: 2px solid #F0145A ;
+            color: #f0145a;
         }
     }
 }
