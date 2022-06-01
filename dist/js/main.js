@@ -1,3 +1,5 @@
+let isNavListVisible = false
+
 function clickHandle(evt, itemExperience) {
     let i, content, tab_btn;
     content = document.getElementsByClassName("content");
@@ -17,6 +19,21 @@ function changeLanguage(index){
     for (i = 0; i < langBtn.length; i++){
         langBtn[i].className = 'lng';
     }
-
-    langBtn[index].className += ' selected_lng'
+    langBtn[index].className += ' selected_lng';
+}
+function toggleList(){
+    isNavListVisible = !isNavListVisible
+    let navList = document.getElementById('navMenu')
+    if (isNavListVisible) {
+        navList.style.display = 'flex'
+    }else {
+        navList.style.display = 'none'
+    }
+}
+function hideList(){
+    if (document.body.clientWidth <375){
+        isNavListVisible = false
+        let navList = document.getElementById('navMenu')
+        navList.style.display = 'none'
+    }
 }
