@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/jquery.main.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -33,17 +33,17 @@
                             </svg></a>
                     </div>
                     <nav class="header_menu">
-                        <button class="header_menu_btn">
+                        <button class="header_menu_btn" onclick="toggleList()">
                             <span></span>
                             <span></span>
                             <span></span>
                         </button>
-                        <ul class="header_list">
-                            <li class="header_item"><a href="#about_anchor" class="header_link">about us</a></li>
-                            <li class="header_item"><a href="#services_anchor" class="header_link">services</a></li>
-                            <li class="header_item"><a href="#team_anchor" class="header_link">team</a></li>
-                            <li class="header_item"><a href="#publication_anchor" class="header_link">publications</a></li>
-                            <li class="header_item"><a href="" class="header_link">contact</a></li>
+                        <ul class="header_list" id="navMenu">
+                            <li class="header_item" onclick="hideList()"><a href="#about_anchor" class="header_link header_link__active">about us</a></li>
+                            <li class="header_item" onclick="hideList()"><a href="#services_anchor" class="header_link">services</a></li>
+                            <li class="header_item" onclick="hideList()"><a href="#team_anchor" class="header_link">team</a></li>
+                            <li class="header_item" onclick="hideList()"><a href="#publication_anchor" class="header_link">publications</a></li>
+                            <li class="header_item" onclick="hideList()"><a href="" class="header_link">contact</a></li>
                         </ul>
                     </nav>
                 </header>
