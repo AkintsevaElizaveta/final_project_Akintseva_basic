@@ -11,6 +11,7 @@ img {
 a{
     text-decoration: none;
     cursor: pointer;
+    transition: 500ms;
     &:hover {
         text-decoration: underline;
         color: #f0145a;

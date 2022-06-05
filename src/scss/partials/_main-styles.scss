@@ -10,47 +10,59 @@
   margin-bottom: 70px;
 }
 .main{
-  max-width: 1440px;
-  padding: 0 60px;
+  max-width: 1920px;
+  min-width: 1439px;
+  padding: 0 160px;
   margin: 0 auto;
-  @media screen and (min-width: 1919px){
-    max-width: 1920px;
-    padding: 0 160px;
+  @media screen and (max-width: 1439px){
+    max-width: 1439px;
+    min-width: 1023px;
+    padding: 0 60px;
   }
   @media screen and (max-width: 1023px) {
-    max-width: 1024px;
+    max-width: 1023px;
+    min-width: 767px;
   }
   @media screen and (max-width: 767px) {
-    max-width: 768px;
+    max-width: 767px;
+    min-width: 479px;
   }
-  @media screen and (max-width: 374px){
-    max-width: 480px;
+  @media screen and (max-width: 479px){
+    max-width: 479px;
+    min-width: 0;
     padding: 0 30px;
   }
 }
 .header{
-  width: 1320px;
-  padding: 50px 5px 0;
+  max-width: 1600px;
+  min-width: 1320px;
+  padding: 0 5px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: space-between;
   position: relative;
-  @media screen and (min-width: 1919px){
-    width: 1600px;
+  @media screen and (max-width: 1439px){
+    max-width: 1320px;
+    min-width: 904px;
   }
   @media screen and (max-width: 1023px) {
     max-width: 904px;
+    min-width: 767px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
   @media screen and (max-width: 767px) {
+    margin: 0 auto 0 0;
     max-width: 648px;
+    min-width: 479px;
+    padding: 0 60px;
   }
-  @media screen and (max-width: 374px) {
+  @media screen and (max-width: 479px) {
     grid-template-rows: 1fr 1fr;
-    max-width: 375px;
+    max-width: 100%;
+    min-width: 100%;
     margin: 0 auto;
     padding: 0;
   }
@@ -63,7 +75,7 @@
       grid-area: 1/1/2/2;
       justify-self: start;
     }
-    @media screen and (max-width: 374px){
+    @media screen and (max-width: 479px){
       background: rgba(255, 255, 255, 0.3);
       width: 100%;
       max-height: 45px;
@@ -77,8 +89,8 @@
     @media screen and (max-width: 767px){
       grid-area: 2/1/3/2;
     }
-    @media screen and (max-width: 374px){
-      padding: 15px;
+    @media screen and (max-width: 479px){
+      margin:15px;
       width: 70px;
     }
     }
@@ -88,7 +100,7 @@
     &:hover{
       fill: #24A3FF;
     }
-    @media screen and (max-width: 374px){
+    @media screen and (max-width: 479px){
       display: none;
     }
   }
@@ -104,7 +116,7 @@
       height: 6px;
       border-radius: 50%;
       background: #E6E6F0;
-      @media screen and (max-width: 374px){
+      @media screen and (max-width: 479px){
         display: none;
       }
     }
@@ -118,7 +130,7 @@
     color: white;
     transition: 500ms;
     &:hover{
-      color: white;
+      color: #f0145a;
       text-decoration-line: none;
     }
   }
@@ -128,6 +140,9 @@
     padding: 5px 7px;
     background: #F0145A;
     border-radius: 8px;
+    &:hover {
+      color: white;
+    }
   }
   .address{
     position: relative;
@@ -135,7 +150,7 @@
     color: white;
     font-style: normal;
     margin-right: 18px;
-    @media screen and (max-width: 374px){
+    @media screen and (max-width: 479px){
       display: none;
     }
     &:after{
@@ -147,7 +162,7 @@
       height: 6px;
       border-radius: 50%;
       background: #E6E6F0;
-      @media screen and (max-width: 374px){
+      @media screen and (max-width: 479px){
         display: none;
       }
     }
@@ -159,7 +174,7 @@
     line-height: 20px;
     text-decoration-line: none;
     margin-right: 18px;
-    @media screen and (max-width: 374px){
+    @media screen and (max-width: 479px){
       margin: 0;
     }
     &:hover{
@@ -174,7 +189,7 @@
       height: 6px;
       border-radius: 50%;
       background: #E6E6F0;
-      @media screen and (max-width: 374px){
+      @media screen and (max-width: 479px){
         display: none;
       }
     }
@@ -183,24 +198,32 @@
 .home_page{
   background: url("../img/Symbol.png") 50% 50% no-repeat;
   background-size: contain;
-  max-width: 1440px;
+  max-width: 1920px;
+  min-width: 1439px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 50px 5px 0;
   margin: 0 auto 60px;
-  @media screen and (min-width: 1919px){
-    width: 1920px;
+  @media screen and (max-width: 1439px){
+    max-width: 1439px;
+    min-width: 1023px;
   }
   @media screen and (max-width: 1023px){
     max-width: 1024px;
+    min-width: 767px;
   }
   @media screen and (max-width: 767px) {
-    max-width: 768px;
+    background-size: cover;
+    max-width: 767px;
+    min-width: 479px;
   }
-  @media screen and (max-width: 374px) {
-    max-width: 375px;
+  @media screen and (max-width: 479px) {
+    max-width: 479px;
+    min-width: 0;
+    padding: 0;
   }
 }
 .home_title{
@@ -208,9 +231,10 @@
   line-height: 46px;
   color: white;
   font-weight: 700;
-  margin:0 0 120px;
+  margin: 0 10px 100px;
   text-align: center;
-  @media screen and (max-width: 374px){
+  justify-self: start;
+  @media screen and (max-width: 479px){
     margin:0 15px 60px;
   }
 }
@@ -242,30 +266,32 @@
   }
 }
 .experience{
+  max-width: 1360px;
   margin: 0 auto 60px;
   padding: 0;
   display: grid;
-  grid-template-columns: 1.5fr 2fr;
+  grid-template-columns: 375px 1fr;
   grid-column-gap: 120px;
   align-items: center;
-  @media screen and (max-width: 767px){
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr;
-    grid-row-gap: 120px;
+  @media screen and (max-width: 1439px){
+    max-width: 1080px;
   }
-  .content:before{
+  @media screen and (max-width: 767px){
+    max-width: 904px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 0;
+  }
+  .tab:after{
     content: '';
     position: absolute;
     top:0;
-    left: -60px;
+    right: -60px;
     height: 100%;
     width: 4px;
     background:rgba(255, 255, 255, 0.3);
     @media screen and (max-width: 767px){
-      top:-60px;
-      left: 0;
-      height: 4px;
-      width: 100%;
+      display: none;
     }
   }
   .tab {
@@ -273,11 +299,15 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    position: relative;
     @media screen and (max-width: 767px){
+      padding-bottom: 58px;
+      margin-bottom: 58px;
       flex-direction: row;
       overflow: auto;
       flex-wrap: nowrap;
       justify-content: space-between;
+      border-bottom: 4px solid rgba(255, 255, 255, 0.3);
     }
     &_btn{
       background-color: inherit;
@@ -288,11 +318,12 @@
       font-size: 38px;
       line-height: 46px;
       font-weight: 700;
-      color: white;
+      color: #B3B3BA;
       transition: 500ms;
       padding:0 0 30px;
       @media screen and (max-width: 767px) {
         margin-right: 30px;
+        padding-bottom: 0;
       }
       &:focus{
         background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
@@ -308,7 +339,7 @@
     display: block;
   }
   .content {
-    padding: 20px;
+    padding: 0;
     display: none;
     border: none;
     position: relative;
@@ -331,6 +362,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
   &_title{
     font-size: 14px;
     line-height: 17px;
@@ -351,6 +383,9 @@
       transform: rotate(-45deg);
     }
   }
+  &_container{
+    margin-bottom: 60px;
+  }
   &_top_text{
     font-size: 38px;
     line-height: 47px;
@@ -370,7 +405,7 @@
     @media screen and (max-width: 768px){
       grid-template-columns: repeat(2, 1fr);
     }
-    @media screen and (max-width: 374px) {
+    @media screen and (max-width: 479px) {
       grid-template-columns: 1fr;
       grid-row-gap: 30px;
     }
@@ -390,10 +425,13 @@
     }
     .item_text{
       color: white;
+      margin: 0;
     }
   }
-
-
+.mobile_nav{
+  display: flex;
+  justify-content: space-between;
+}
 
 
 
