@@ -13,6 +13,7 @@ function clickHandle(evt, itemExperience) {
     document.getElementById(itemExperience).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
 function changeLanguage(index){
     //selected_lng
     let langBtn = document.getElementsByClassName("lng");
@@ -21,6 +22,7 @@ function changeLanguage(index){
     }
     langBtn[index].className += ' selected_lng';
 }
+
 function toggleList(){
     isNavListVisible = !isNavListVisible
     let navList = document.getElementById('navMenu')
@@ -30,8 +32,15 @@ function toggleList(){
         navList.style.display = 'none'
     }
 }
+
+function menuItemSelected(text) {
+   hideList()
+    let selectedItemBox = document.getElementById('selectedItemNav');
+    selectedItemBox.innerText = text;
+}
+
 function hideList(){
-    if (document.body.clientWidth <375){
+    if (document.body.clientWidth < 479){
         isNavListVisible = false
         let navList = document.getElementById('navMenu')
         navList.style.display = 'none'
