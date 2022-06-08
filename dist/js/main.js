@@ -46,3 +46,44 @@ function hideList(){
         navList.style.display = 'none'
     }
 }
+
+let selectedSlide = 0
+
+startChanging();
+
+function showSlide(n) {
+    let slides = document.getElementsByClassName("slider_item");
+
+    if (n > slides.length - 1) {
+        n = 0;
+    }
+
+    selectedSlide = n
+
+    for (let i = 0; i < slides.length; i++){
+        slides[i].style.display = i === selectedSlide ? "grid" : "none";
+    }
+
+    let dots = document.getElementsByClassName("slider_dots_item");
+
+    for (let i = 0; i < slides.length; i++){
+        if (i === selectedSlide) {
+            dots[i].className = "slider_dots_item slider_dots_item_active"
+        } else {
+            dots[i].className = "slider_dots_item"
+        }
+    }
+}
+
+function startChanging() {
+    let time = 3000 // 3s
+
+    showSlide(selectedSlide)
+
+    setInterval(nextSlide, time)
+}
+
+function nextSlide() {
+    selectedSlide++;
+    showSlide(selectedSlide)
+}
