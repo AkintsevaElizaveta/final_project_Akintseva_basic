@@ -396,13 +396,13 @@
 .team{
   width: 100%;
   padding: 0 160px;
+  margin-bottom: 60px;
   @media screen and (max-width: 1919px) {
     padding: 0 60px;
   }
   @media screen and (max-width: 767px) {
     padding: 0 30px;
   }
-
 }
 .slider{
   width: 100%;
@@ -493,6 +493,95 @@
     }
   }
 }
+.clients{
+  width: 100%;
+  padding: 0 100px;
+  margin-bottom: 30px;
+  @media screen and (max-width: 1919px) {
+    padding: 0;
+  }
+  .clients_title{
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px;
+  }
+  .clients_container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    @media screen and (max-width: 1023px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+    &__item{
+      height: 120px;
+      background: #1C4280;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .item_01{
+      border-radius: 12px 0 0 0;
+      @media screen and (max-width: 1919px) {
+        border-radius: 0;
+      }
+    }
+    .item_02{
+      background: #143646;
+    }
+    .item_03{
+      background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+    }
+    .item_04{
+      background: #9E4DC3;
+      border-radius: 0 12px 0 0;
+      @media screen and (max-width: 1919px) {
+        border-radius: 0;
+      }
+    }
+    .item_05{
+      background: #FD9339;
+    }
+    .item_06{
+      background: #E2E2E4;
+    }
+    .item_07{
+      background: #C71C36;
+    }
+    .item_08{
+      background: #DCF3F9;
+    }
+    .item_09{
+      background: #EAEAEA;
+      border-radius: 0 0 0 12px;
+      @media screen and (max-width: 1919px) {
+        border-radius: 0;
+      }
+    }
+    .item_10{
+      background: #282240;
+    }
+    .item_11{
+      background: #1D4568;
+    }
+    .item_12{
+      background: #000000;
+      border-radius: 0 0 12px 0;
+      @media screen and (max-width: 1919px) {
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+
 
 
 
