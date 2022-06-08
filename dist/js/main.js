@@ -33,14 +33,14 @@ function toggleList(){
     }
 }
 
-function menuItemSelected(text) {
-   hideList()
-    let selectedItemBox = document.getElementById('selectedItemNav');
-    selectedItemBox.innerText = text;
-}
+// function menuItemSelected(text) {
+//    hideList()
+//     let selectedItemBox = document.getElementById('selectedItemNav');
+//     selectedItemBox.innerText = text;
+// }
 
 function hideList(){
-    if (document.body.clientWidth < 479){
+    if (document.body.clientWidth < 768){
         isNavListVisible = false
         let navList = document.getElementById('navMenu')
         navList.style.display = 'none'
