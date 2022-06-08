@@ -393,6 +393,108 @@
       margin: 0;
     }
   }
+.team{
+  width: 100%;
+  padding: 0 160px;
+  @media screen and (max-width: 1919px) {
+    padding: 0 60px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 0 30px;
+  }
+
+}
+.slider{
+  width: 100%;
+}
+.slider_item{
+    border-radius: 12px;
+    background: #F5F5FA;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  .slider_img {
+    border-radius: 12px 0 0 12px;
+    width: 100%;
+    @media screen and (max-width: 1023px) {
+      border-radius: 12px 12px 0 0;
+      object-fit: contain;
+    }
+  }
+  .slider_description{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px;
+    .slider_title{
+      font-size: 14px;
+      line-height: 17px;
+      color: #24A3FF;
+      font-weight: 700;
+      position: relative;
+      margin: 0 0 5px;
+      &:after{
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: -10px;
+        width: 5px;
+        height: 5px;
+        border-right: 2px solid #24A3FF;
+        border-bottom: 2px solid #24A3FF;
+        transform: rotate(-45deg);
+      }
+    }
+    .slider_comment{
+      font-size: 38px;
+      line-height: 47px;
+      font-weight: 700;
+      background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0 0 30px;
+      @media screen and (max-width: 767px) {
+        font-size: 30px;
+        line-height: 37px;
+      }
+    }
+    .members_name{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: #B3B3BA;
+      margin: 0 0 6px;
+    }
+    .members_post{
+      font-size: 14px;
+      line-height: 22px;
+      color: #B3B3BA;
+      margin: 0;
+    }
+  }
+}
+.slider_dots{
+  text-align: center;
+  .slider_dots_item{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #24A3FF;
+    margin: 30px 8px;
+    display: inline-block;
+    opacity: 0.2;
+    &_active {
+      opacity: 1;
+    }
+  }
+}
+
+
 
 
 
