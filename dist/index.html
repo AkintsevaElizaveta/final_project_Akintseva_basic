@@ -17,7 +17,7 @@
         <div class="dark_bg_part">
             <div class="home_page">
                 <header class="header">
-                        <img class="logo_img" src="img/Logo.svg" alt="">
+                    <img class="logo_img" src="img/Logo.svg" alt="">
                     <div class="header_contacts">
                         <div class="lng_box">
                             <a onclick="changeLanguage(0)" class="lng">УК</a>
@@ -26,216 +26,282 @@
                         <address class="address">Kyiv, Mechnikova str, 14/1</address>
                         <a href="tel:+0800211927" class="tel">0800 211 927</a>
                         <a class="facebook" href="">
-                            <svg  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_40399_2714)"><path class="facebook" d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="white"/></g><defs>
-                            <clipPath id="clip0_40399_2714"><rect width="24" height="24" fill="white" transform="translate(0 0.5)"/></clipPath></defs>
-                            </svg></a>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_40399_2714)">
+                                    <path class="facebook"
+                                          d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                          fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_40399_2714">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
                     </div>
                     <nav class="header_menu">
-<!--                            <p class="selected_Item_Nav" id="selectedItemNav"></p>-->
-                            <button class="header_menu_btn" onclick="toggleList()">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
+                        <!--                            <p class="selected_Item_Nav" id="selectedItemNav"></p>-->
+                        <button class="header_menu_btn" onclick="toggleList()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                         <ul class="header_list" id="navMenu">
-                            <li class="header_item" onclick="hideList()"><a href="#about_anchor" class="header_link header_link__active">about us</a></li>
-                            <li class="header_item" onclick="hideList()"><a href="#services_anchor" class="header_link">services</a></li>
-                            <li class="header_item" onclick="hideList()"><a href="#team_anchor" class="header_link">team</a></li>
-                            <li class="header_item" onclick="hideList()"><a href="#publication_anchor" class="header_link">publications</a></li>
+                            <li class="header_item" onclick="hideList()"><a href="#about_anchor"
+                                                                            class="header_link header_link__active">about
+                                us</a></li>
+                            <li class="header_item" onclick="hideList()"><a href="#services_anchor" class="header_link">services</a>
+                            </li>
+                            <li class="header_item" onclick="hideList()"><a href="#team_anchor"
+                                                                            class="header_link">team</a></li>
+                            <li class="header_item" onclick="hideList()"><a href="#publication_anchor"
+                                                                            class="header_link">publications</a></li>
                             <li class="header_item" onclick="hideList()"><a href="" class="header_link">contact</a></li>
                         </ul>
                     </nav>
                 </header>
                 <h1 class="home_title">you legal solutions provider</h1>
-                <a href="#about_anchor"><button class="scroll_btn"></button></a>
+                <a href="#about_anchor">
+                    <button class="scroll_btn"></button>
+                </a>
             </div>
-            <main class="main">
-                <div class="experience" id="about_anchor">
-                    <div class="tab">
-                        <button class="tab_btn" onclick="clickHandle(event, 'Consistent')">Consistent</button>
-                        <button class="tab_btn" onclick="clickHandle(event, 'Customer_oriented')">Customer oriented</button>
-                        <button class="tab_btn" onclick="clickHandle(event, 'Innovative')">Innovative</button>
-                        <button class="tab_btn" onclick="clickHandle(event, 'Business_oriented')">Business oriented</button>
-                    </div>
-                    <div id="Consistent" class="content">
-                        <h2 class="content_title">We turn the idea of legal services</h2>
-                        <p class="content_text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
-                    </div>
-                    <div id="Customer_oriented" class="content">
-                        <h2 class="content_title">Title 2</h2>
-                        <p class="content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut debitis dolores dolorum eius fugit id ipsam labore pariatur, perspiciatis porro quaerat rerum saepe unde ut. Beatae natus perspiciatis temporibus!</p>
-                    </div>
-                    <div id="Innovative" class="content">
-                        <h2 class="content_title">Title 3</h2>
-                        <p class="content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum eos inventore iure, laudantium mollitia nisi placeat possimus sit ullam. Amet consequuntur esse facere molestias, nisi quia repudiandae suscipit? Impedit!</p>
-                    </div>
-                    <div id="Business_oriented" class="content">
-                        <h2 class="content_title">Title 4</h2>
-                        <p class="content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum eos inventore iure, laudantium mollitia nisi placeat possimus sit ullam. Amet consequuntur esse facere molestias, nisi quia repudiandae suscipit? Impedit!</p>
-                    </div>
+            <div class="experience" id="about_anchor">
+                <div class="tab">
+                    <button class="tab_btn" onclick="clickHandle(event, 'Consistent')">Consistent</button>
+                    <button class="tab_btn" onclick="clickHandle(event, 'Customer_oriented')">Customer oriented</button>
+                    <button class="tab_btn" onclick="clickHandle(event, 'Innovative')">Innovative</button>
+                    <button class="tab_btn" onclick="clickHandle(event, 'Business_oriented')">Business oriented</button>
                 </div>
-                <div class="services" id="services_anchor">
-                    <h3 class="services_title">SERVICES</h3>
-                    <strong class="gradient_title gradient_title__services">What can we do better than others?</strong>
-                    <div class="services_container">
-                        <ul class="services_list">
-                            <li class="services_item">
-                                <img src="img/icons/icon1.svg" alt="" class="item_img">
-                                <h3 class="item_title">IT and e-commerce</h3>
-                                <p class="item_text">An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
-                            </li>
-                            <li class="services_item">
-                                <img src="img/icons/icon2.svg" alt="" class="item_img">
-                                <h3 class="item_title">Comprehensive daily legal support</h3>
-                                <p class="item_text">In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
-                            </li>
-                            <li class="services_item">
-                                <img src="img/icons/icon3.svg" alt="" class="item_img">
-                                <h3 class="item_title">Structuring corporate relationships</h3>
-                                <p class="item_text">Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
-                            </li>
-                            <li class="services_item">
-                                <img src="img/icons/icon4.svg" alt="" class="item_img">
-                                <h3 class="item_title">Building contractual relations</h3>
-                                <p class="item_text">Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
-                            </li>
-                            <li class="services_item">
-                                <img src="img/icons/icon5.svg" alt="" class="item_img">
-                                <h3 class="item_title">Protection of business, intellectual property</h3>
-                                <p class="item_text">And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
-                            </li>
-                            <li class="services_item">
-                                <img src="img/icons/icon6.svg" alt="" class="item_img">
-                                <h3 class="item_title">Judicial representation</h3>
-                                <p class="item_text">Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
-                            </li>
-                        </ul>
-                    </div>
+                <div id="Consistent" class="content">
+                    <h2 class="content_title">We turn the idea of legal services</h2>
+                    <p class="content_text">Consolidating many years of experience and practice, the company's lawyers
+                        accompany complex projects and achieve a number of important decisions for the industry. Many of
+                        them form the practice of applying the law of the sea in Ukraine.</p>
                 </div>
+                <div id="Customer_oriented" class="content">
+                    <h2 class="content_title">Title 2</h2>
+                    <p class="content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut debitis
+                        dolores dolorum eius fugit id ipsam labore pariatur, perspiciatis porro quaerat rerum saepe unde
+                        ut. Beatae natus perspiciatis temporibus!</p>
+                </div>
+                <div id="Innovative" class="content">
+                    <h2 class="content_title">Title 3</h2>
+                    <p class="content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum
+                        eos inventore iure, laudantium mollitia nisi placeat possimus sit ullam. Amet consequuntur esse
+                        facere molestias, nisi quia repudiandae suscipit? Impedit!</p>
+                </div>
+                <div id="Business_oriented" class="content">
+                    <h2 class="content_title">Title 4</h2>
+                    <p class="content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum
+                        eos inventore iure, laudantium mollitia nisi placeat possimus sit ullam. Amet consequuntur esse
+                        facere molestias, nisi quia repudiandae suscipit? Impedit!</p>
+                </div>
+            </div>
+            <div class="services" id="services_anchor">
+                <h3 class="services_title">SERVICES</h3>
+                <strong class="gradient_title gradient_title__services">What can we do better than others?</strong>
+                <div class="services_container">
+                    <ul class="services_list">
+                        <li class="services_item">
+                            <img src="img/icons/icon1.svg" alt="" class="item_img">
+                            <h3 class="item_title">IT and e-commerce</h3>
+                            <p class="item_text">An endless stream of contracts, tax issues, labor relations, corporate
+                                papers - legal work distracts you from doing business. But there is not much work to do
+                                to hire an in-house lawyer.</p>
+                        </li>
+                        <li class="services_item">
+                            <img src="img/icons/icon2.svg" alt="" class="item_img">
+                            <h3 class="item_title">Comprehensive daily legal support</h3>
+                            <p class="item_text">In addition, over time, the work will become the same type and
+                                uninteresting for a full-time lawyer. And we know very well how difficult it is to find
+                                a good candidate with experience in the field of information technology in Ukraine.</p>
+                        </li>
+                        <li class="services_item">
+                            <img src="img/icons/icon3.svg" alt="" class="item_img">
+                            <h3 class="item_title">Structuring corporate relationships</h3>
+                            <p class="item_text">Instead of just providing legal services, we will hire a lawyer or a
+                                whole team that will fit into the daily life of your company.</p>
+                        </li>
+                        <li class="services_item">
+                            <img src="img/icons/icon4.svg" alt="" class="item_img">
+                            <h3 class="item_title">Building contractual relations</h3>
+                            <p class="item_text">Once a week, or week after month, you have your own lawyer by your
+                                side. Anyone in the company can catch it at the coffee maker and just talk about current
+                                affairs instead of waiting for update status.</p>
+                        </li>
+                        <li class="services_item">
+                            <img src="img/icons/icon5.svg" alt="" class="item_img">
+                            <h3 class="item_title">Protection of business, intellectual property</h3>
+                            <p class="item_text">And all the other time he will work on new diverse projects, so he will
+                                definitely not stop in professional development. One way or another, all Axon Partners
+                                will work for you instead of a corporate lawyer.</p>
+                        </li>
+                        <li class="services_item">
+                            <img src="img/icons/icon6.svg" alt="" class="item_img">
+                            <h3 class="item_title">Judicial representation</h3>
+                            <p class="item_text">Is it a small, medium-sized company or a market leader? Local business
+                                or multinational company? Do you have your own legal department or not?</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-                    <div class="team" id="team_anchor">
-                        <div class="slider">
-                            <div class="slider_item" id="active_item">
-                                <img src="img/Team-1.jpg" alt="first_slider" class="slider_img">
-                                <div class="slider_description">
-                                    <h3 class="slider_title">КОМАНДА</h3>
-                                    <strong class="gradient_title gradient_title__team">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</strong>
-                                    <p class="members_name">Олександр Олександровський</p>
-                                    <p class="members_post">Керуючий партнер</p>
-                                </div>
-                            </div>
-                            <a class="prev" onclick="minusSlide()"></a>
-                            <a class="next" onclick="plusSlide()"></a>
-                            <div class="slider_item">
-                                <img src="img/Team-2.jpg" alt="second_slider" class="slider_img">
-                                <div class="slider_description">
-                                    <h3 class="slider_title">КОМАНДА</h3>
-                                    <strong class="gradient_title gradient_title__team">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</strong>
-                                    <p class="members_name">Евгений Патриков</p>
-                                    <p class="members_post">Пайовий партнер, адвокат</p>
-                                </div>
-                            </div>
-                            <div class="slider_item">
-                                <img src="img/Team-3.jpg" alt="third_slider" class="slider_img">
-                                <div class="slider_description">
-                                    <h3 class="slider_title">КОМАНДА</h3>
-                                    <strong class="gradient_title gradient_title__team">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</strong>
-                                    <p class="members_name">Vladislav Melnik</p>
-                                    <p class="members_post">Партнер</p>
-                                </div>
-                            </div>
-                            <div class="slider_item">
-                                <img src="img/Team-4.jpg" alt="first_slider" class="slider_img">
-                                <div class="slider_description">
-                                    <h3 class="slider_title">КОМАНДА</h3>
-                                    <strong class="gradient_title gradient_title__team">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</strong>
-                                    <p class="members_name">Sergey Binn</p>
-                                    <p class="members_post">Партнер</p>
-                                </div>
-                            </div>
-                            <div class="slider_item">
-                                <img src="img/Team-5.jpg" alt="first_slider" class="slider_img">
-                                <div class="slider_description">
-                                    <h3 class="slider_title">КОМАНДА</h3>
-                                    <strong class="gradient_title gradient_title__team">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</strong>
-                                    <p class="members_name">Oksana Kobzar</p>
-                                    <p class="members_post">Пайовий партнер, адвокат</p>
-                                </div>
-                            </div>
-                            <div class="slider_item">
-                                <img src="img/Team-6.jpg" alt="first_slider" class="slider_img">
-                                <div class="slider_description">
-                                    <h3 class="slider_title">КОМАНДА</h3>
-                                    <strong class="gradient_title gradient_title__team">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</strong>
-                                    <p class="members_name">Julia Wolk</p>
-                                    <p class="members_post">Партнер, юрист</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider_dots">
-                            <span class="slider_dots_item" onclick="showSlide(0)"></span>
-                            <span class="slider_dots_item" onclick="showSlide(1)"></span>
-                            <span class="slider_dots_item" onclick="showSlide(2)"></span>
-                            <span class="slider_dots_item" onclick="showSlide(3)"></span>
-                            <span class="slider_dots_item" onclick="showSlide(4)"></span>
-                            <span class="slider_dots_item" onclick="showSlide(5)"></span>
+            <div class="team" id="team_anchor">
+                <div class="slider">
+                    <div class="slider_item" id="active_item">
+                        <img src="img/Team-1.jpg" alt="first_slider" class="slider_img">
+                        <div class="slider_description">
+                            <h3 class="slider_title">КОМАНДА</h3>
+                            <strong class="gradient_title gradient_title__team">Ми звикли брати на себе відповідальність та
+                                завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
+                                безсилі.</strong>
+                            <p class="members_name">Олександр Олександровський</p>
+                            <p class="members_post">Керуючий партнер</p>
                         </div>
                     </div>
-                    <div class="clients">
-                        <h3 class="clients_title">THEY ALREADY TRUST US</h3>
-                        <ul class="clients_container">
-                            <li class="clients_container__item item_01"><a href=""><img src="img/client1.png" alt="" class="clients_logo clients_logo1"></a></li>
-                            <li class="clients_container__item item_02"><a href=""><img src="img/client2.png" alt="" class="clients_logo clients_logo2"></a></li>
-                            <li class="clients_container__item item_03"><a href=""><img src="img/client3.png" alt="" class="clients_logo clients_logo3"></a></li>
-                            <li class="clients_container__item item_04"><a href=""><img src="img/client4.png" alt="" class="clients_logo clients_logo4"></a></li>
-                            <li class="clients_container__item item_05"><a href=""><img src="img/client5.png" alt="" class="clients_logo clients_logo5"></a></li>
-                            <li class="clients_container__item item_06"><a href=""><img src="img/client6.png" alt="" class="clients_logo clients_logo6"></a></li>
-                            <li class="clients_container__item item_07"><a href=""><img src="img/client7.png" alt="" class="clients_logo clients_logo7"></a></li>
-                            <li class="clients_container__item item_08"><a href=""><img src="img/client8.png" alt="" class="clients_logo clients_logo8"></a></li>
-                            <li class="clients_container__item item_09"><a href=""><img src="img/client9.png" alt="" class="clients_logo clients_logo9"></a></li>
-                            <li class="clients_container__item item_10"><a href=""><img src="img/client10.png" alt="" class="clients_logo clients_logo10"></a></li>
-                            <li class="clients_container__item item_11"><a href=""><img src="img/client11.png" alt="" class="clients_logo clients_logo11"></a></li>
-                            <li class="clients_container__item item_12"><a href=""><img src="img/client12.png" alt="" class="clients_logo clients_logo12"></a></li>
+                    <a class="prev" onclick="minusSlide()"></a>
+                    <a class="next" onclick="plusSlide()"></a>
+                    <div class="slider_item">
+                        <img src="img/Team-2.jpg" alt="second_slider" class="slider_img">
+                        <div class="slider_description">
+                            <h3 class="slider_title">КОМАНДА</h3>
+                            <strong class="gradient_title gradient_title__team">Ми звикли брати на себе відповідальність та
+                                завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
+                                безсилі.</strong>
+                            <p class="members_name">Евгений Патриков</p>
+                            <p class="members_post">Пайовий партнер, адвокат</p>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <img src="img/Team-3.jpg" alt="third_slider" class="slider_img">
+                        <div class="slider_description">
+                            <h3 class="slider_title">КОМАНДА</h3>
+                            <strong class="gradient_title gradient_title__team">Ми звикли брати на себе відповідальність та
+                                завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
+                                безсилі.</strong>
+                            <p class="members_name">Vladislav Melnik</p>
+                            <p class="members_post">Партнер</p>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <img src="img/Team-4.jpg" alt="first_slider" class="slider_img">
+                        <div class="slider_description">
+                            <h3 class="slider_title">КОМАНДА</h3>
+                            <strong class="gradient_title gradient_title__team">Ми звикли брати на себе відповідальність та
+                                завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
+                                безсилі.</strong>
+                            <p class="members_name">Sergey Binn</p>
+                            <p class="members_post">Партнер</p>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <img src="img/Team-5.jpg" alt="first_slider" class="slider_img">
+                        <div class="slider_description">
+                            <h3 class="slider_title">КОМАНДА</h3>
+                            <strong class="gradient_title gradient_title__team">Ми звикли брати на себе відповідальність та
+                                завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
+                                безсилі.</strong>
+                            <p class="members_name">Oksana Kobzar</p>
+                            <p class="members_post">Пайовий партнер, адвокат</p>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <img src="img/Team-6.jpg" alt="first_slider" class="slider_img">
+                        <div class="slider_description">
+                            <h3 class="slider_title">КОМАНДА</h3>
+                            <strong class="gradient_title gradient_title__team">Ми звикли брати на себе відповідальність та
+                                завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
+                                безсилі.</strong>
+                            <p class="members_name">Julia Wolk</p>
+                            <p class="members_post">Партнер, юрист</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_dots">
+                    <span class="slider_dots_item" onclick="showSlide(0)"></span>
+                    <span class="slider_dots_item" onclick="showSlide(1)"></span>
+                    <span class="slider_dots_item" onclick="showSlide(2)"></span>
+                    <span class="slider_dots_item" onclick="showSlide(3)"></span>
+                    <span class="slider_dots_item" onclick="showSlide(4)"></span>
+                    <span class="slider_dots_item" onclick="showSlide(5)"></span>
+                </div>
+            </div>
+            <div class="clients">
+                <h3 class="clients_title">THEY ALREADY TRUST US</h3>
+                <ul class="clients_container">
+                    <li class="clients_container__item item_01"><a href=""><img src="img/client1.png" alt=""
+                                                                                class="clients_logo clients_logo1"></a></li>
+                    <li class="clients_container__item item_02"><a href=""><img src="img/client2.png" alt=""
+                                                                                class="clients_logo clients_logo2"></a></li>
+                    <li class="clients_container__item item_03"><a href=""><img src="img/client3.png" alt=""
+                                                                                class="clients_logo clients_logo3"></a></li>
+                    <li class="clients_container__item item_04"><a href=""><img src="img/client4.png" alt=""
+                                                                                class="clients_logo clients_logo4"></a></li>
+                    <li class="clients_container__item item_05"><a href=""><img src="img/client5.png" alt=""
+                                                                                class="clients_logo clients_logo5"></a></li>
+                    <li class="clients_container__item item_06"><a href=""><img src="img/client6.png" alt=""
+                                                                                class="clients_logo clients_logo6"></a></li>
+                    <li class="clients_container__item item_07"><a href=""><img src="img/client7.png" alt=""
+                                                                                class="clients_logo clients_logo7"></a></li>
+                    <li class="clients_container__item item_08"><a href=""><img src="img/client8.png" alt=""
+                                                                                class="clients_logo clients_logo8"></a></li>
+                    <li class="clients_container__item item_09"><a href=""><img src="img/client9.png" alt=""
+                                                                                class="clients_logo clients_logo9"></a></li>
+                    <li class="clients_container__item item_10"><a href=""><img src="img/client10.png" alt=""
+                                                                                class="clients_logo clients_logo10"></a>
+                    </li>
+                    <li class="clients_container__item item_11"><a href=""><img src="img/client11.png" alt=""
+                                                                                class="clients_logo clients_logo11"></a>
+                    </li>
+                    <li class="clients_container__item item_12"><a href=""><img src="img/client12.png" alt=""
+                                                                                class="clients_logo clients_logo12"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="publication" id="publication_anchor">
+                <div class="publication_container">
+                    <h3 class="publication_title">Publications</h3>
+                    <strong class="gradient_title gradient_title__publication">We have something to tell</strong>
+                    <div class="publication_cards">
+                        <ul class="card_list">
+                            <li class="card_item">
+                                <img src="img/card1.png" alt="" class="card_img">
+                                <div class="card_text_box">
+                                    <a class="card_title" href=""><h4>Equity associate</h4></a>
+                                    <span class="card_date">April 22</span>
+                                    <p class="card_text">I'm a jun on projects. I am a co-owner of a law firm. How it
+                                        happened. Before entering my parents told me that if I…</p>
+                                </div>
+                            </li>
+                            <li class="card_item">
+                                <img src="img/card2.png" alt="" class="card_img">
+                                <div class="card_text_box">
+                                    <a class="card_title" href="">
+                                        <h4>Penalty for the Good Corporation: what will happen to Google and others for
+                                            violating the GDPR</h4>
+                                    </a>
+                                    <span class="card_date">September 29</span>
+                                    <p class="card_text">And why the recovery of 50 million euros could be a fateful
+                                        precedent According to Mind.ua January 21 National Commission for Data
+                                        Protection.</p>
+                                </div>
+                            </li>
+                            <li class="card_item">
+                                <img src="img/card3.png" alt="" class="card_img">
+                                <div class="card_text_box">
+                                    <a class="card_title" href=""><h4>Millennial Testament</h4></a>
+                                    <span class="card_date">August 19</span>
+                                    <p class="card_text">What and how modern vloggers, opinion leaders and
+                                        crypto-millionaires will inherit A typical legacy of the Ukrainian generation X
+                                        looks like this: an apartment in…</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                    <div class="publication" id="publication_anchor">
-                        <div class="publication_container">
-                            <h3 class="publication_title">Publications</h3>
-                            <strong class="gradient_title gradient_title__publication">We have something to tell</strong>
-                            <div class="publication_cards">
-                                <ul class="card_list">
-                                    <li class="card_item">
-                                        <img src="img/card1.png" alt="" class="card_img">
-                                        <div class="card_text_box">
-                                            <a class="card_title" href=""><h4>Equity associate</h4></a>
-                                            <span class="card_date">April 22</span>
-                                            <p class="card_text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
-                                        </div>
-                                    </li>
-                                    <li class="card_item">
-                                        <img src="img/card2.png" alt="" class="card_img">
-                                        <div class="card_text_box">
-                                            <a  class="card_title" href="">
-                                                <h4>Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h4>
-                                            </a>
-                                            <span class="card_date">September 29</span>
-                                            <p class="card_text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
-                                        </div>
-                                    </li>
-                                    <li class="card_item">
-                                        <img src="img/card3.png" alt="" class="card_img">
-                                        <div class="card_text_box">
-                                            <a  class="card_title" href=""><h4>Millennial Testament</h4></a>
-                                            <span class="card_date">August 19</span>
-                                            <p class="card_text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-        </main>
+                </div>
+            </div>
         <footer class="footer">
             <div class="footer_container">
                 <div class="footer_container__contacts">
