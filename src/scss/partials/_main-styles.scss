@@ -336,7 +336,7 @@
   position: relative;
   padding: 0 160px 60px;
   @media screen and (max-width: 1919px) {
-    padding: 0 60px;
+    padding: 0 60px 60px;
   }
   @media screen and (max-width: 767px) {
     padding: 0 30px 60px;
@@ -624,6 +624,9 @@
     margin: 0 0 30px;
   }
 }
+.publication_cards{
+  align-self: center;
+}
 .card_list{
   padding: 0;
   margin: 0 0 30px;
@@ -689,6 +692,122 @@
     }
   }
   }
+.footer{
+  width: 100%;
+  background: #F5F5FA;
+  padding: 0 160px;
+  @media screen and (max-width: 1919px){
+    padding: 0 60px;
+  }
+  @media screen and (max-width: 767px){
+    padding: 0 30px;
+  }
+}
+.footer_container{
+  border-top: 2px solid #E6E6F0;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 767px){
+    flex-direction: column;
+    align-items: center;
+  }
+  &__contacts{
+    @media screen and (max-width: 767px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+}
+}
+.top_footer{
+  margin-bottom: 20px
+;
+  @media screen and (max-width: 767px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer_container__address{
+  display: inline-block;
+  color: #323264;
+  @media screen and (max-width: 767px){
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+.footer_container__address:after{
+  content: '';
+  position: absolute;
+  right: -16px;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #B3B3BA;
+}
+.on_map{
+  font-size: 12px;
+  line-height: 15px;
+  color: #24A3FF;font-weight: 700;
+}
+.bottom_footer{
+  width: 398px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 767px){
+    margin-bottom: 10px;
+    flex-direction: column;
+    height: 100px;
+    width: auto;
+    justify-content: space-between;
+  }
+}
+.facebook_bottom{
+  position: relative;
+}
+.facebook_bottom:after {
+  content: '';
+  position: absolute;
+  right: -16px;
+  top: 19px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #B3B3BA;
+  @media screen and (max-width: 767px){
+    display: none;
+  }
+}
+.bottom_footer__tel{
+  color: #46466E;
+  margin: 0;
+}
+.bottom_footer__tel:after{
+  content: '';
+  position: absolute;
+  right: -16px;
+  top: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #B3B3BA;
+}
+.email_footer{
+  line-height: 20px;
+  color: #24A3FF;
+  font-weight: 700;
+  margin: 0;
+}
+.footer_container__text{
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3BA;
+  margin: 0;
+}
+
 
 
 
