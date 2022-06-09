@@ -87,3 +87,48 @@ function nextSlide() {
     selectedSlide++;
     showSlide(selectedSlide)
 }
+
+let selectedSlideAbout = 0
+
+// startChangingAbout();
+    showSlideAbout(0);
+
+function showSlideAbout(n) {
+    let slides = document.getElementsByClassName("achievements_items");
+
+    if (n > slides.length - 1) {
+        n = 0;
+    }
+
+    selectedSlideAbout = n
+
+    let blocksCount = 0;
+    if (document.body.clientWidth < 767){
+        blocksCount = slides.length
+    }
+    else {
+        blocksCount = Math.floor(slides.length/4);
+    }
+
+    for (let i = 0; i < blocksCount; i++){
+        if(document.body.clientWidth < 767){
+            slides[i].style.display = i === selectedSlideAbout ? "flex" : "none";
+        }
+        else {
+            slides[i * 4].style.display = i === selectedSlideAbout ? "flex" : "none";
+            slides[i * 4 + 1].style.display = i === selectedSlideAbout ? "flex" : "none";
+            slides[i * 4 + 2].style.display = i === selectedSlideAbout ? "flex" : "none";
+            slides[i * 4 + 3].style.display = i === selectedSlideAbout ? "flex" : "none";
+        }
+    }
+
+    let dots = document.getElementsByClassName("slider_dots_item");
+
+    for (let i = 0; i < blocksCount; i++){
+        if (i === selectedSlideAbout) {
+            dots[i].className = "slider_dots_item slider_dots_item_active"
+        } else {
+            dots[i].className = "slider_dots_item"
+        }
+    }
+}

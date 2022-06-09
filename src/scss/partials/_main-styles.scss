@@ -519,6 +519,12 @@
       opacity: 1;
     }
   }
+  .slider_dots_item_tab{
+    display: none;
+    @media screen and (max-width: 767px){
+      display: inline-block;
+    }
+  }
 }
 .clients{
   width: 100%;
@@ -526,13 +532,6 @@
   margin-bottom: 30px;
   @media screen and (max-width: 1919px) {
     padding: 0;
-  }
-  .clients_title{
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 0 30px;
   }
   .clients_container{
     width: 100%;
@@ -606,6 +605,13 @@
       }
     }
   }
+}
+.clients_title{
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 30px;
 }
 .publication{
   width: 100%;
@@ -948,16 +954,25 @@
   }
   .achievements_items{
     height: 110px;
+    min-width: 132px;
     background: white;
     border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     @media screen and (max-width: 1023px) {
       height: 90px;
     }
   }
+  .achievements_logo{
+    max-width: 160px;
+    @media screen and (max-width: 1023px){
+      max-width: 110px;
+    }
+  }
 }
+
 
 
 
